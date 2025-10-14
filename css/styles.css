@@ -1,0 +1,47 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 24px 156px;
+    list-style-type: none;
+    max-width: 1128px;
+} 
+
+.gallery-item {
+    flex-basis: calc((100% - 48px) / 3);
+    overflow: hidden;
+}
+
+.gallery-link {
+    display: block;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 200px;
+}
+
+.basicLightbox {
+    background-color: rgba(46, 47, 66, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basicLightbox__placeholder {
+    overflow: hidden;
+    max-width: 1112px;
+    max-height: 640px;
+}
+
+
+.basicLightbox__placeholder img {
+    display: block;
+    width: 100%;
+}
